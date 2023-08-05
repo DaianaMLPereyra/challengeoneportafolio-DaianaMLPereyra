@@ -1,0 +1,116 @@
+.titulos__sobremi{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    padding: 5rem;
+    width: 50vw;
+    height: auto;
+    background: -webkit-linear-gradient(left,  var(--color-negro),var(--colorv0));
+    border-radius: 20px;
+    box-shadow: 16px 14px 20px var(--color-negro);
+}
+body.white .titulos__sobremi{
+    background: -webkit-linear-gradient(left,  var(--colorv2),var(--colorv3));
+    box-shadow: 16px 14px 20px var(--colorv0);
+}
+.sobremi__titulo{
+    text-align: center;
+    color: var(--color-blanco);
+    font-size: 2.5rem;
+    font-family: var(--fuente4);
+    font-weight: 400;
+}
+body.white .sobremi__titulo{
+    color: var(--colorv8);
+}
+.sobremi__parrafo{
+    text-align: center;
+    color: var(--color-blanco);
+    font-size: 1.9rem;
+    font-family: var(--fuente5);
+    font-weight: 400;
+}
+body.white .sobremi__parrafo{
+    color: var(--colorv8);
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px) {
+    .titulos__sobremi{
+        width: 40vw;
+        height: auto;
+        margin:1rem;
+        padding: auto;
+    }
+    .sobremi__titulo{
+        font-size: 1rem;
+    }
+    .sobremi__parrafo{
+        font-size: 1rem;
+        padding: 0.2rem;
+    }
+    
+}
+@media screen and (min-width:375px) and (max-width:599px) {
+    .titulos__sobremi{
+        width: 55vw;
+        height: auto;
+        padding: 1.5rem;
+        
+    }
+    .sobremi__titulo{
+        font-size: 1.5rem;
+    }
+    .sobremi__parrafo{
+        font-size: 1.2rem;
+        padding:0.5rem;
+    }
+    
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .titulos__sobremi{
+        width:60vw;
+        height: auto;
+        padding: auto;
+        margin: 1rem;
+    }
+    .sobremi__titulo{
+        font-size: 1.7rem;
+    }
+    .sobremi__parrafo{
+        font-size: 1.3rem;
+    
+    }
+}
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .titulos__sobremi{
+        width: 70vw;
+        height: auto;
+    }
+    .sobremi__titulo{
+        font-size: 2rem;
+    }
+    .sobremi__parrafo{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+    .titulos__sobremi{
+        width:90vw;
+        height: auto;
+        margin: 1rem;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .sobremi__titulo{
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .sobremi__parrafo{
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+}

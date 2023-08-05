@@ -1,0 +1,298 @@
+.card{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border-radius: 20px;
+margin: 0.5rem;
+padding: 0.5rem;
+width: 50vw;
+height: 52vh;
+background: -webkit-linear-gradient(left,var(--colorv0), var(--color-negro),var(--colorv0));
+filter: blur(0px);
+border-radius: 20px;
+box-shadow: 16px 14px 20px var(--color-negro);
+}
+body.white .card{
+    background: -webkit-linear-gradient(left,var(--colorv8), var(--colorv3),var(--colorv8)); 
+    box-shadow: 16px 14px 20px var(--colorv1);
+}
+
+.card__box{
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 10px;
+    margin: 1rem;
+    padding: 1rem;
+    width: 45vw;
+    height: 48vh;
+    background: -webkit-linear-gradient(left,  var(--color-negro),var(--colorv0), var(--color-negro));
+    filter: blur(0px);
+    border-radius: 20px;
+    box-shadow: 16px 14px 20px var(--color-negro);
+}
+body.white .card__box{
+    background: -webkit-linear-gradient(left,  var(--colorv2),var(--colorv3), var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv1);
+}
+.box__img{
+    width: 25vw;
+    height: auto;
+    justify-content: center;
+align-items: center;
+margin: 1rem;
+}
+.img_pro{
+    width: 20vw;
+    height: 28vh;
+    
+}
+.card__text{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+padding: 0.5rem;
+text-align: center;
+}
+.card__titulo{
+    color: var(--colorv8);
+    font-size: 1.5rem;
+    font-family: var(--fuente5);
+    font-weight: 400;
+   
+}
+.card__subtitulo{
+    color: var(--colorv8);
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-family: var(--fuente5);
+    font-weight: 400;
+    margin: 1rem;
+}
+.card__btn{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+margin: auto;
+gap: 5px;
+}
+.fa-arrow-up-right-from-square{
+color: var(--colorv8);
+line-height: 5px;
+object-fit: cover;
+font-size: 1rem;
+text-align: center;
+}
+.card__btn a{
+    text-decoration: none;
+}
+.card__btn .bn{
+    font-size: 1.5rem;
+    font-family: var(--fuente5);
+    font-weight: 400;
+    color: var(--colorv8);
+}
+ .lnk{
+    font-size: 1rem;
+    font-family: var(--fuente4);
+    font-weight: 400;
+    background: -webkit-linear-gradient(left,var(--colorv0), var(--color-negro),var(--colorv0));
+    filter: blur(0px);
+    box-shadow: 16px 14px 20px var(--color-negro);
+    border-radius: 50%;
+    padding: 1.4rem;
+    margin: 1rem;
+    color: var(--colorv8);
+    flex-direction: column;
+    transition: .3s ease all;
+}
+body.white .lnk{
+    background: -webkit-linear-gradient(left,  var(--colorv2),var(--colorv3), var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv1);
+}
+.lnk:hover{
+    letter-spacing: 0.2rem;
+}
+.repo{
+    width: auto;
+    height: auto;
+    margin: 1rem;
+    padding: 1.3rem;
+   
+    text-align: center;
+    border-radius: 10px;
+    background: -webkit-linear-gradient(left,var(--colorv0), var(--color-negro),var(--colorv0));
+    filter: blur(0px);
+    box-shadow: 16px 14px 20px var(--color-negro);
+    transition: .3s ease all;
+}
+body.white .repo{
+    background: -webkit-linear-gradient(left,  var(--colorv2),var(--colorv3), var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv1);
+}
+.repo:hover{
+letter-spacing: 0.2rem;
+width: auto;
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px)  {
+    .card, .card__box, .box__img{
+        width: auto;
+        height: auto;
+        margin: 1rem ;
+        padding: auto;
+    }
+    .img_pro{
+        width: 34vw;
+        height: auto;
+        
+    }
+    .card__text{
+        margin: auto;
+    }
+    .card__titulo{
+        font-size: 0.9rem;
+    }
+    .card__subtitulo{
+        font-size: 0.9rem;
+    }
+    .card__btn .bn{
+        font-size: 1rem;
+     
+    }
+    .repo{
+        width: auto;
+        height: auto;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width:599px) {
+    .card, .card__box, .box__img{
+        width: auto;
+        height: auto;
+        margin: 1rem ;
+        padding: auto;
+    }
+    .img_pro{
+        width: 35vw;
+        height: auto;
+        
+    }
+    .card__text{
+        margin: auto;
+    }
+    .card__titulo{
+        font-size: 1rem;
+    }
+    .card__subtitulo{
+        font-size: 0.9rem;
+    }
+    .card__btn .bn{
+        font-size: 1.2rem;
+     
+    }
+    .repo{
+        width: auto;
+        height: auto;
+       
+    }
+    
+    .repo:hover{
+        letter-spacing: 0.1rem;
+        width: 100px;
+    }
+    .lnk{
+        font-size: 0.7rem;
+        width: auto;
+        height: auto;
+    }
+    .lnk:hover{
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .card, .card__box, .box__img{
+        width: auto;
+        height: auto;
+        margin: 1rem ;
+        padding: auto;
+        flex-direction: column;
+    }
+   
+    .img_pro{
+        width: 35vw;
+        height: auto;
+        
+    }
+    .card__text{
+        margin: auto;
+    }
+    .card__titulo{
+        font-size: 1.2rem;
+    }
+    .card__subtitulo{
+        font-size: 0.8rem;
+    }
+    
+  
+}
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .card, .card__box, .box__img{
+        width: auto;
+        height: auto;
+        margin: 1rem ;
+        padding: auto;
+       
+    }
+    .img_pro{
+        width: 35vw;
+        height: auto;
+        margin: 2.8rem;
+    }
+    .card__text{
+        margin: auto;
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .card, .card__box, .box__img{
+        display: flex;
+        width: auto;
+        height: auto;
+        margin: 1rem ;
+        padding: auto;
+       
+    }
+    .img_pro{
+        width: 32vw;
+        height: auto;
+        margin: 0.3rem;
+    }
+    .card__text{
+        margin: auto;
+        padding: 0.2rem;
+    }
+    .card__titulo{
+        font-size: 1.3rem;
+    }
+    .card__subtitulo{
+        font-size: 1.3rem;
+    }
+    .repo{
+        width: auto;
+        height: auto;
+        padding: 1rem;
+        font-size: 1.5rem;
+        margin: auto;
+    }
+    .lnk{
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+}

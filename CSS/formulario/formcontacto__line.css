@@ -1,0 +1,67 @@
+.formcontacto__line{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5rem;
+   margin-bottom: 5rem;
+   text-align: center;
+   height: 85%;
+   width: 30vw;
+   position: relative;
+   padding: 3rem ;
+   border-radius: 5px;
+   background: linear-gradient(var(--colorv2),var(--colorv5),var(--colorv8),var(--colorv2));
+    box-shadow: 16px 14px 20px var(--color-negro);
+    border-radius: 20px;
+}
+body.white .formcontacto__line{
+   background: linear-gradient(var(--colorv2),var(--colorv4),var(--colorv3),var(--colorv2),var(--colorv4),var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv1);
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:375px)  {
+   .formcontacto__line{
+      height: auto;
+      width: auto;
+      margin: 2rem;
+      padding: auto;
+    }
+}
+@media screen and (min-width:375px) and (max-width:599px) {
+   .formcontacto__line{
+     height: auto;
+     width: 45vw;
+     margin: 2rem;
+   }
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+   .formcontacto__line{
+     
+      height: 80%;
+      width: 40vw;
+      margin: 1rem;
+      
+   }
+}
+@media screen and (min-width:769px) and (max-width:1023px) {
+   .formcontacto__line{
+     
+      height: auto;
+      width: 45vw;
+      margin: 3rem;
+      
+   }
+}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+   .formcontacto__line{
+      height: auto;
+      width: 50vw;
+      padding: 1rem;
+      margin: 3rem;
+      
+   }
+}

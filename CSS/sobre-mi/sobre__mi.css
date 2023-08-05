@@ -1,0 +1,48 @@
+.sobre__mi {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    margin: 4rem;
+    padding: 4rem;
+    width: auto;
+    height: auto;
+    
+  
+}
+.container__sobremi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    margin: 2rem;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px) {
+    .sobre__mi ,.container__sobremi {
+        width: auto;
+        height: auto;
+        margin: 1rem;
+        padding: auto;
+    }
+}
+@media screen and (min-width:375px) and (max-width:600px) {
+    .sobre__mi ,.container__sobremi {
+        width: auto;
+        height: auto;
+        margin: 1rem;
+        padding: auto;
+    }
+}
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .sobre__mi ,.container__sobremi {
+        width: auto;
+        height: auto;
+      
+    }
+}
+   

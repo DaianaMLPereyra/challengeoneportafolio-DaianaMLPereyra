@@ -1,0 +1,212 @@
+.hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2rem;
+    width: 55vw;
+    height: 36vh;
+    background: -webkit-linear-gradient(left,  var(--color-negro),var(--colorv0), var(--color-negro));
+    filter: blur(0px);
+    border-radius: 20px;
+    box-shadow: 16px 14px 20px var(--color-negro);
+}
+body.white .hobbies{
+    background: -webkit-linear-gradient(left ,var(--colorv2),var(--colorv4),var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv0);
+}
+.hobbies h3{
+    font-size: 1.9rem;
+    color: var(--color-blanco);
+    font-family: var(--fuente4);
+    font-weight: 400;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+body.white .hobbies h3{
+    color: var(--colorv8);
+}
+.contenedor__hobbies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+   
+}
+.interes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.2rem;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    background: -webkit-linear-gradient(left,  var(--color-negro),var(--colorv0), var(--color-negro));
+    filter: blur(0px);
+    border-radius: 20px;
+    box-shadow: 16px 14px 20px var(--color-negro);
+  cursor: pointer;
+  transition: .3s ease all;
+}
+body.white .interes{
+    background: -webkit-linear-gradient(left, var(--colorv2),var(--colorv3),var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv0);
+}
+.interes:hover{
+    width: 110px;
+    height: 100px;
+}
+.interes span{
+    font-size: 1.5rem;
+   color: var(--color-blanco);
+    font-family: var(--fuente5);
+    font-weight: 400;
+    margin: 1rem;
+    text-align: center;
+    object-fit: cover;
+}
+body.white .interes span{
+    color: var(--colorv8);
+    font-weight: 800;
+}
+.fa-headphones, .fa-futbol,
+.fa-laptop-code, .fa-book-open-reader, .contenedor__hobbies.contenedor__hobbies,
+.fa-gamepad{
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+   font-size: 1.1rem;
+   color: var(--color-blanco);
+}
+body.white .fa-headphones, .fa-futbol,
+.fa-laptop-code, .fa-book-open-reader, .contenedor__hobbies.contenedor__hobbies,
+.fa-gamepad{
+    color: var(--colorv8);
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:375px) {
+    .hobbies{
+        width: auto;
+        height: auto;
+        margin: 1rem;
+        padding: auto;
+    }
+    .hobbies h3{
+        font-size: 1rem;
+        color: var(--colorv7);
+    }
+    .interes{
+        width: auto;
+        height: auto;
+        object-fit: cover;
+        flex-direction: column;
+        margin: 1rem;
+        padding: auto;
+    }
+    .interes span{
+        font-size: 1rem;
+    }
+    .fa-headphones, .fa-futbol,
+.fa-laptop-code, .fa-book-open-reader, .contenedor__hobbies.contenedor__hobbies,
+.fa-gamepad{
+    font-size: 1rem;
+    color: var(--colorv7);
+    }
+    .interes span{
+        font-size: 0.7rem;
+        color: var(--colorv7);
+    }
+}
+@media screen and (min-width:375px) and (max-width:599px) {
+    .hobbies{
+        width: auto;
+        height: auto;
+        margin: 1rem;
+        padding: auto;
+    }
+    .contenedor__hobbies{
+        width: auto;
+        height: auto;
+        margin: 1rem;
+        padding: auto;
+       
+    }
+    .hobbies h3{
+        font-size: 1.4rem;
+        color: var(--colorv7);
+    }
+    .interes{
+        width: auto;
+        height: auto;
+        margin: 1rem;
+        padding: auto;
+        object-fit: cover;
+        flex-direction: column;
+    }
+    .interes span{
+        font-size: 1.2rem;
+    }
+    .fa-headphones, .fa-futbol,
+.fa-laptop-code, .fa-book-open-reader, .contenedor__hobbies.contenedor__hobbies,
+.fa-gamepad{
+    font-size: 1.1rem;
+    color: var(--colorv7);
+    }
+    .interes span{
+        font-size: 1.1rem;
+        color: var(--colorv7);
+    }
+    
+}
+
+@media screen and (min-width:600px) and (max-width:768px) {
+    .hobbies{
+        width: auto;
+        height: auto;
+        padding: auto;
+        margin: 1rem;
+       
+    }
+   
+    .interes{
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        cursor: pointer;
+        margin: 1rem ;
+        padding: auto;
+    }
+}
+@media screen and (min-width:769px) and (max-width:1023px) {
+    .hobbies{
+      width: auto;
+       height: auto;
+       margin: 3rem ;
+    }
+    .interes{
+        width: auto;
+        height: auto;
+      
+    }
+}
+@media screen and (min-width:1024px) and (max-width:1440px) {
+    .hobbies{
+      width: auto;
+       height: auto;
+       margin: 1rem ;
+       padding: 2rem;
+    }
+    .interes{
+        width: auto;
+        height: auto;
+      
+    }
+}

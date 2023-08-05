@@ -1,0 +1,35 @@
+.container__proy{
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin: 5rem ;
+    padding: 2rem;
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px)  {
+    .container__proy{
+        height: auto;
+        width: auto;
+        margin: 1rem ;
+       padding: auto;
+       }
+}
+
+@media screen and (min-width:375px) and (max-width:599px) {
+    .container__proy{
+     height: auto;
+     width: auto;
+     margin: 1rem ;
+    padding: auto;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px) {
+    .container__proy{
+     height: auto;
+     width: auto;
+     margin: 1rem ;
+    padding: auto;
+    }
+}

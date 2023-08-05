@@ -1,0 +1,88 @@
+.academico__box{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background: -webkit-linear-gradient(left,  var(--color-negro),var(--colorv0));
+    filter: blur(0.5px);
+    border-radius: 20px;
+    box-shadow: 16px 14px 20px var(--color-negro);
+}
+body.white .academico__box{
+    background: -webkit-linear-gradient(left,var(--colorv2),  var(--colorv4),var(--colorv2));
+    box-shadow: 16px 14px 20px var(--colorv1);
+}
+.academico__box h2{
+    font-size: 1.1rem;
+    color: var(--color-blanco);
+    font-family: var(--fuente4);
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+}
+body.white .academico__box h2{
+    color: var(--colorv8);
+}
+.academico__box p{
+    font-size: 1.2rem;
+    color: var(--colorv7);
+    font-family: var(--fuente5);
+    font-weight: 400;
+}
+body.white .academico__box p{
+    color: var(--colorv8);
+}
+.academico__box h3{
+    font-size: 1.6rem;
+    color: var(--colorv8);
+    font-family: var(--fuente5);
+    font-weight: 400;
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px) {
+    .academico__box{
+        height: auto;
+        margin: auto;
+        margin: auto;
+        padding: auto;
+      }
+      .academico__box h2{
+          font-size: 0.7rem;
+          margin: auto;
+      }
+      .academico__box h3{
+          font-size: 1rem;
+          margin: auto;
+       }
+       .academico__box p{
+        font-size: 1rem;
+   
+    }
+}
+@media screen and (min-width:375px) and (max-width:767px) {
+    .academico__box{
+      height: auto;
+      margin: auto;
+    }
+    .academico__box h2{
+        font-size: 1.2rem;
+        margin: auto;
+    }
+    .academico__box h3{
+        font-size: 1.2rem;
+        margin: auto;
+    }
+    .academico__box p{
+        font-size: 1.1rem;
+        
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+
+}

@@ -1,0 +1,152 @@
+.contenedor__redes{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: auto;
+    
+  }
+.icon{
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  text-align: center;
+  margin: 1rem;
+  font-size: 2.4rem;
+  line-height: 80px;
+  font-family: var(--fuente5);
+    font-weight: 400;
+  overflow: hidden;
+  box-shadow: 16px 14px 20px var(--color-negro);
+  transition: all 2s;
+}
+body.white .icon{
+    box-shadow: 16px 14px 20px var(--colorv1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0));
+}
+
+.icon:hover{
+    width: 300px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.icon .fa-linkedin{
+    color: var(--colorv8);
+    font-size: 1.7rem;
+}
+
+
+.lin:hover{
+    color: var(--colorv8);
+    font-size: 2rem;
+    
+}
+
+.icon .fa-github{
+    color: var(--colorv8);
+    font-size: 1.7rem;
+   
+}
+
+.git:hover{
+    color: var(--colorv8);
+    font-size: 2rem;
+    
+}
+
+.icon .fa-envelope{
+    color: var(--colorv8);
+    font-size: 1.7rem;
+}
+
+.gml:hover{
+    color: var(--colorv8);
+    font-size: 2rem;
+}
+
+.icon a{
+    text-decoration: none;
+}
+.icon:hover a span{
+    color: var(--colorv8);
+    font-size: 1.2rem;
+}
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:375px) {
+    .contenedor__redes{
+        width: auto;
+        height: auto;
+    }
+    .icon{
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+    }
+    .icon:hover{
+       display: none;
+    }
+    .icon .fa-linkedin{
+        font-size: 1rem;
+    }
+    
+    .icon .fa-github{
+        font-size: 1rem;
+    }
+    
+    .icon .fa-envelope{
+        font-size: 1rem;
+    }
+    
+}
+@media screen and (min-width:375px) and (max-width:600px) {
+    .contenedor__redes{
+        width: 20vw;
+        height: 45vh;
+    }
+    .icon{
+        width: 55px;
+        height: 55px;
+        line-height: 60px;
+    }
+    .icon:hover{
+        width: 300px;
+    }
+    .icon .fa-linkedin{
+        font-size: 1.4rem;
+    }
+    .lin:hover{
+        font-size: 1.5rem;
+    }
+    .icon .fa-github{
+        font-size: 1.4rem;
+    }
+    .git:hover{
+        font-size: 1.5rem;
+    }
+    .icon .fa-envelope{
+        font-size: 1.4rem;
+    }
+    .gml:hover{
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media screen and (min-width:601px) and (max-width:1023px) {
+    .contenedor__redes{
+        width: 20vw;
+        height: 50vh;
+    }
+  
+}

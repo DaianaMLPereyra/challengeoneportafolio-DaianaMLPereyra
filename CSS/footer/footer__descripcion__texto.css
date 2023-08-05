@@ -1,0 +1,31 @@
+.footer__descripcion__texto , .copyright{
+    color: var(--colorv8);
+    font-family: var(--fuente5);
+    font-weight: 400;
+    font-size: 1.9rem;
+    margin: 1rem;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:375px)  {
+    .footer__descripcion__texto , .copyright{
+        font-size: 0.6rem;
+        margin: 0.5rem;
+        padding: auto;
+        text-align: center;
+      
+    }
+}
+@media screen and (min-width:375px) and (max-width:599px) {
+    .footer__descripcion__texto , .copyright{
+        font-size: 1rem;
+        margin: 1rem;
+      
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px) {
+    .footer__descripcion__texto , .copyright{
+        font-size: 1.5rem;
+      
+    }
+}

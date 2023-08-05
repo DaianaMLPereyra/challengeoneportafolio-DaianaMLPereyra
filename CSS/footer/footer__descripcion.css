@@ -1,0 +1,17 @@
+.footer__descripcion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/*RESPONSIVE*/
+@media screen and (min-width:375px) and (max-width:600px) {
+    .footer__descripcion{
+        flex-wrap: wrap;
+        word-wrap: break-word;
+    }
+}

@@ -1,0 +1,35 @@
+.academico__titulo{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding-bottom: 2rem;
+   font-size: 2.9rem;
+   color: var(--colorv8);
+   font-family: var(--fuente4);
+    font-weight: 400;
+   letter-spacing: 0.3rem;
+}
+body.white .academico__titulo{
+   color: var(--colorv0);
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px){
+   .academico__titulo{
+      font-size: 1.1rem;
+   }
+}
+@media screen and (min-width:375px) and (max-width:767px) {
+   .academico__titulo{
+      font-size: 1.5rem;
+   }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+   .academico__titulo{
+      font-size: 2rem;
+      padding: 2rem;
+      margin-top: -7rem;
+   }
+}

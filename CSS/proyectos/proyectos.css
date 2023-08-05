@@ -1,0 +1,36 @@
+.proyectos{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90vw;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 6rem;
+    padding: 2rem;
+}
+/*RESPONSIVE*/
+@media screen and (max-width:375px)  {
+  .proyectos{
+    width: auto;
+    height: auto;
+    margin: 1rem;
+    padding: auto;
+  }
+}
+
+@media screen and (min-width:375px) and (max-width:599px) {
+    .proyectos{
+      width: auto;
+      height: auto;
+      margin: 2rem;
+      padding: auto;
+    }
+}
+@media screen and (min-width:600px) and (max-width:768px) {
+  .proyectos{
+    width: auto;
+    height: auto;
+    margin: 1rem;
+    padding: auto;
+  }
+}
